@@ -1,0 +1,12 @@
+{
+  "imports": {
+    "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
+    "react": "https://cdn.jsdelivr.net/npm/react@17.0.2/umd/react.production.min.js",
+    "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@17.0.2/umd/react-dom.production.min.js",
+    "@wepay/root-config": "https://sea-lion-app-744fw.ondigitalocean.app/wepay-root-config.js",
+    "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
+    "@wepay/header-mfe": "https://sea-lion-app-744fw.ondigitalocean.app/header-mfe/wepay-header-mfe.js",
+    "@wepay/enterprise-root-config": "https://sea-lion-app-744fw.ondigitalocean.app/enterprise-root-config/wepay-enterprise-root-config.js",
+    "@wepay/merchant-root-config": "https://sea-lion-app-744fw.ondigitalocean.app/merchat-root-config/wepay-merchant-root-config.js"
+  }
+}
