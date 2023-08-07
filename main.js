@@ -2,7 +2,7 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 305:
+/***/ 9:
 /***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
 
@@ -20,69 +20,105 @@ var single_spa_min_t=Object.freeze({__proto__:null,get start(){return single_spa
 /* single-spa-layout@2.2.0 - esm */
 function single_spa_layout_min_u(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter((function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable}))),n.push.apply(n,r)}return n}function single_spa_layout_min_s(e){for(var t=1;t<arguments.length;t++){var n=null!=arguments[t]?arguments[t]:{};t%2?single_spa_layout_min_u(Object(n),!0).forEach((function(t){single_spa_layout_min_d(e,t,n[t])})):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):single_spa_layout_min_u(Object(n)).forEach((function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))}))}return e}function single_spa_layout_min_l(e){return(single_spa_layout_min_l="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}function single_spa_layout_min_d(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function single_spa_layout_min_f(e){return function(e){if(Array.isArray(e))return single_spa_layout_min_h(e)}(e)||function(e){if("undefined"!=typeof Symbol&&null!=e[Symbol.iterator]||null!=e["@@iterator"])return Array.from(e)}(e)||single_spa_layout_min_p(e)||function(){throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}()}function single_spa_layout_min_p(e,t){if(e){if("string"==typeof e)return single_spa_layout_min_h(e,t);var n=Object.prototype.toString.call(e).slice(8,-1);return"Object"===n&&e.constructor&&(n=e.constructor.name),"Map"===n||"Set"===n?Array.from(e):"Arguments"===n||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)?single_spa_layout_min_h(e,t):void 0}}function single_spa_layout_min_h(e,t){(null==t||t>e.length)&&(t=e.length);for(var n=0,r=new Array(t);n<t;n++)r[n]=e[n];return r}var single_spa_layout_min_v="undefined"!=typeof window;function single_spa_layout_min_m(e,t){if("object"!==single_spa_layout_min_l(t)||Array.isArray(t)||null===t)throw Error("Invalid ".concat(e,": received ").concat(Array.isArray(t)?"array":t," but expected a plain object"))}function single_spa_layout_min_y(e,t){if("boolean"!=typeof t)throw Error("Invalid ".concat(e,": received ").concat(single_spa_layout_min_l(t),", but expected a boolean"))}function single_spa_layout_min_g(e,t,n,r){if(!r){var o=Object.keys(t),a=[];o.forEach((function(e){n.indexOf(e)<0&&a.push(e)})),a.length>0&&console.warn(Error("Invalid ".concat(e,": received invalid properties '").concat(a.join(", "),"', but valid properties are ").concat(n.join(", "))))}}function single_spa_layout_min_b(e,t){var n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if("string"!=typeof t||n&&""===t.trim())throw Error("Invalid ".concat(e,": received '").concat(t,"', but expected a").concat(n?" non-blank":""," string"))}function single_spa_layout_min_w(e,t){if(single_spa_layout_min_b(e,t),t.indexOf("/")<0)throw Error("Invalid ".concat(e,": received '").concat(t,"', but expected an absolute path that starts with /"))}function single_spa_layout_min_E(e,t,n){if(!Array.isArray(t)&&("object"!==single_spa_layout_min_l(single_spa_layout_min_l(t))||"number"!==t.length))throw Error("Invalid ".concat(e,": received '").concat(t,"', but expected an array"));for(var r=arguments.length,o=new Array(r>3?r-3:0),a=3;a<r;a++)o[a-3]=arguments[a];for(var i=0;i<t.length;i++)n.apply(void 0,[t[i],"".concat(e,"[").concat(i,"]")].concat(o))}function single_spa_layout_min_N(e,t){single_spa_layout_min_b("path",t);var n=single_spa_layout_min_s({},e),r=e.base.slice(0,e.base.length-1);if(0===t.indexOf(r)){var o=single_spa_layout_min_v?window.location.origin:"http://localhost",a=new URL(single_spa_layout_min_O(o,t));n.routes=single_spa_layout_min_A(a,e.routes)}else n.routes=[];return n}function single_spa_layout_min_A(e,t){var n=[];return t.forEach((function(t){"application"===t.type?n.push(t):"route"===t.type?t.activeWhen(e)&&n.push(single_spa_layout_min_s(single_spa_layout_min_s({},t),{},{routes:single_spa_layout_min_A(e,t.routes)})):Array.isArray(t.routes)?n.push(single_spa_layout_min_s(single_spa_layout_min_s({},t),{},{routes:single_spa_layout_min_A(e,t.routes)})):n.push(t)})),n}function single_spa_layout_min_O(e,t){var n;return"/"===(n="/"===e.substr(-1)?"/"===t[0]?e+t.slice(1):e+t:"/"===t[0]?e+t:e+"/"+t).substr(-1)&&n.length>1&&(n=n.slice(0,n.length-1)),n}function single_spa_layout_min_C(e,t){for(var n=0;n<e.length;n++)if(t(e[n]))return e[n];return null}var single_spa_layout_min_x="undefined"!=typeof Symbol?Symbol():"@";function single_spa_layout_min_P(t,n){if(t&&t.nodeName||"string"==typeof t){if(single_spa_layout_min_v&&!n&&window.singleSpaLayoutData&&(n=window.singleSpaLayoutData),"string"==typeof t){if(!single_spa_layout_min_v)throw Error("calling constructRoutes with a string on the server is not yet supported");if(!(t=(new DOMParser).parseFromString(t,"text/html").documentElement.querySelector("single-spa-router")))throw Error("constructRoutes should be called with a string HTML document that contains a <single-spa-router> element.")}t=function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{};if("template"===e.nodeName.toLowerCase()&&(e=(e.content||e).querySelector("single-spa-router")),"single-spa-router"!==e.nodeName.toLowerCase())throw Error("single-spa-layout: The HTMLElement passed to constructRoutes must be <single-spa-router> or a <template> containing the router. Received ".concat(e.nodeName));single_spa_layout_min_v&&e.isConnected&&e.parentNode.removeChild(e);var n={routes:[],redirects:{}};single_spa_layout_min_L(e,"mode")&&(n.mode=single_spa_layout_min_L(e,"mode")),single_spa_layout_min_L(e,"base")&&(n.base=single_spa_layout_min_L(e,"base")),single_spa_layout_min_L(e,"containerEl")&&(n.containerEl=single_spa_layout_min_L(e,"containerEl"));for(var r=0;r<e.childNodes.length;r++){var o;(o=n.routes).push.apply(o,single_spa_layout_min_f(single_spa_layout_min_j(e.childNodes[r],t,n)))}return n}(t,n)}else if(n)throw Error("constructRoutes should be called either with an HTMLElement and layoutData, or a single json object.");return function(t){single_spa_layout_min_m("routesConfig",t);var n,r=t.disableWarnings;if(single_spa_layout_min_g("routesConfig",t,["mode","base","containerEl","routes","disableWarnings","redirects"],r),t.hasOwnProperty("containerEl")?function(e,t){if("string"==typeof t?""===t.trim():!(single_spa_layout_min_v&&t instanceof HTMLElement))throw Error("Invalid ".concat("routesConfig.containerEl",": received ").concat(t," but expected either non-blank string or HTMLElement"))}(0,t.containerEl):t.containerEl="body",t.hasOwnProperty("mode")||(t.mode="history"),function(e,t,n){if(n.indexOf(t)<0)throw Error("Invalid ".concat("routesConfig.mode",": received '").concat(t,"' but expected ").concat(n.join(", ")))}(0,t.mode,["history","hash"]),t.hasOwnProperty("base")?(single_spa_layout_min_b("routesConfig.base",t.base),t.base=(0!==(n=t.base).indexOf("/")&&(n="/"+n),"/"!==n[n.length-1]&&(n+="/"),n)):t.base="/",t.hasOwnProperty("redirects"))for(var o in single_spa_layout_min_m("routesConfig.redirects",t.redirects),t.redirects){var a=t.redirects[o];single_spa_layout_min_w("routesConfig.redirects key",o),single_spa_layout_min_w("routesConfig.redirects['".concat(o,"']"),a)}var i=single_spa_layout_min_v?window.location.pathname:"/",c="hash"===t.mode?i+"#":"";single_spa_layout_min_E("routesConfig.routes",t.routes,(function t(n,o,a){var i=a.parentPath,c=a.siblingActiveWhens,u=a.parentActiveWhen;if(single_spa_layout_min_m(o,n),"application"===n.type)single_spa_layout_min_g(o,n,["type","name","props","loader","error","className"],r),n.props&&single_spa_layout_min_m("".concat(o,".props"),n.props),single_spa_layout_min_b("".concat(o,".name"),n.name);else if("route"===n.type){single_spa_layout_min_g(o,n,["type","path","routes","props","default","exact"],r),n.hasOwnProperty("exact")&&single_spa_layout_min_y("".concat(o,".exact"),n.exact);var s,l=n.hasOwnProperty("path"),d=n.hasOwnProperty("default");if(l)single_spa_layout_min_b("".concat(o,".path"),n.path),s=single_spa_layout_min_O(i,n.path),n.activeWhen=esm_single_spa_min_t(s,n.exact),c.push(n.activeWhen);else{if(!d)throw Error("Invalid ".concat(o,": routes must have either a path or default property."));single_spa_layout_min_y("".concat(o,".default"),n.default),s=i,n.activeWhen=function(e,t){return function(n){return t(n)&&!e.some((function(e){return e(n)}))}}(c,u)}if(l&&d&&n.default)throw Error("Invalid ".concat(o,": cannot have both path and set default to true."));n.routes&&single_spa_layout_min_E("".concat(o,".routes"),n.routes,t,{parentPath:s,siblingActiveWhens:[],parentActiveWhen:n.activeWhen})}else{if("undefined"!=typeof Node&&n instanceof Node);else for(var f in n)"routes"!==f&&"attrs"!==f&&single_spa_layout_min_b("".concat(o,"['").concat(f,"']"),n[f],!1);n.routes&&single_spa_layout_min_E("".concat(o,".routes"),n.routes,t,{parentPath:i,siblingActiveWhens:c,parentActiveWhen:u})}}),{parentPath:c+t.base,parentActiveWhen:function(){return!0},siblingActiveWhens:[]}),delete t.disableWarnings}(t),t}function single_spa_layout_min_L(e,t){if(single_spa_layout_min_v)return e.getAttribute(t);var n=single_spa_layout_min_C(e.attrs,(function(e){return e.name===t.toLowerCase()}));return n?n.value:null}function single_spa_layout_min_S(e,t){return single_spa_layout_min_v?e.hasAttribute(t):e.attrs.some((function(e){return e.name===t}))}function single_spa_layout_min_j(e,t,n){if("application"===e.nodeName.toLowerCase()){if(e.childNodes.length>0)throw Error("<application> elements must not have childNodes. You must put in a closing </application> - self closing is not allowed");var r={type:"application",name:single_spa_layout_min_L(e,"name")},o=single_spa_layout_min_L(e,"loader");if(o)if(t.loaders&&t.loaders.hasOwnProperty(o))r.loader=t.loaders[o];else if(single_spa_layout_min_v)throw Error("Application loader '".concat(o,"' was not defined in the htmlLayoutData"));var a=single_spa_layout_min_L(e,"error");if(a)if(t.errors&&t.errors.hasOwnProperty(a))r.error=t.errors[a];else if(single_spa_layout_min_v)throw Error("Application error handler '".concat(o,"' was not defined in the htmlLayoutData"));var i=single_spa_layout_min_L(e,"class");return i&&(r.className=i),single_spa_layout_min_W(e,r,t),[r]}if("route"===e.nodeName.toLowerCase()){var c={type:"route",routes:[]},u=single_spa_layout_min_L(e,"path");u&&(c.path=u),single_spa_layout_min_S(e,"default")&&(c.default=!0),single_spa_layout_min_S(e,"exact")&&(c.exact=!0),single_spa_layout_min_W(e,c,t);for(var s=0;s<e.childNodes.length;s++){var l;(l=c.routes).push.apply(l,single_spa_layout_min_f(single_spa_layout_min_j(e.childNodes[s],t,n)))}return[c]}if("redirect"===e.nodeName.toLowerCase())return n.redirects[single_spa_layout_min_O("/",single_spa_layout_min_L(e,"from"))]=single_spa_layout_min_O("/",single_spa_layout_min_L(e,"to")),[];if("undefined"!=typeof Node&&e instanceof Node){if(e.nodeType===Node.TEXT_NODE&&""===e.textContent.trim())return[];if(e.childNodes&&e.childNodes.length>0){e.routes=[];for(var d=0;d<e.childNodes.length;d++){var p;(p=e.routes).push.apply(p,single_spa_layout_min_f(single_spa_layout_min_j(e.childNodes[d],t,n)))}}return[e]}if(e.childNodes){for(var h={type:e.nodeName.toLowerCase(),routes:[],attrs:e.attrs},m=0;m<e.childNodes.length;m++){var y;(y=h.routes).push.apply(y,single_spa_layout_min_f(single_spa_layout_min_j(e.childNodes[m],t,n)))}return[h]}return"#comment"===e.nodeName?[{type:"#comment",value:e.data}]:"#text"===e.nodeName?[{type:"#text",value:e.value}]:void 0}function single_spa_layout_min_W(e,t,n){for(var r=(single_spa_layout_min_L(e,"props")||"").split(","),o=0;o<r.length;o++){var a=r[o].trim();if(0!==a.length)if(t.props||(t.props={}),n.props&&n.props.hasOwnProperty(a))t.props[a]=n.props[a];else{if(single_spa_layout_min_v)throw Error("Prop '".concat(a,"' was not defined in the htmlLayoutData. Either remove this attribute from the HTML element or provide the prop's value"));t.props[a]=single_spa_layout_min_x}}}function single_spa_layout_min_T(e){return{bootstrap:function(){return Promise.resolve()},mount:function(t){return Promise.resolve().then((function(){t.domElement.innerHTML=e}))},unmount:function(e){return Promise.resolve().then((function(){e.domElement.innerHTML=""}))}}}function single_spa_layout_min_I(e){var i=e.routes;e.applications;var c=e.active,u=void 0===c||c,s=!1,d={},f=single_spa_layout_min_v&&Boolean(window.singleSpaLayoutData);if(!i)throw Error("single-spa-layout constructLayoutEngine(opts): opts.routes must be provided. Value was ".concat(single_spa_layout_min_l(i)));var p=i.base.slice(0,i.base.length-1),h={isActive:function(){return s},activate:function(){s||(s=!0,single_spa_layout_min_v&&(window.addEventListener("single-spa:before-routing-event",y),window.addEventListener("single-spa:before-mount-routing-event",g),window.addEventListener("single-spa:routing-event",b),single_spa_min_i(m),f&&w(E(),i.routes),g()))},deactivate:function(){s&&(s=!1,single_spa_layout_min_v&&(window.removeEventListener("single-spa:before-routing-event",y),window.removeEventListener("single-spa:before-mount-routing-event",g),window.removeEventListener("single-spa:routing-event",b),single_spa_min_s(m)))}};return u&&h.activate(),h;function m(e){var t=single_spa_layout_min_H({applicationName:e.appOrParcelName,location:window.location,routes:i.routes});if(t&&t.error){var n=document.getElementById(single_spa_layout_min_k(t.name)),o="string"==typeof t.error?single_spa_layout_min_T(t.error):t.error;d[t.name]=single_spa_min_B(o,{domElement:n,error:e})}setTimeout((function(){throw e}))}function y(e){var t=e.detail,n=t.cancelNavigation,r=t.newUrl,a=single_spa_layout_min_q(i,single_spa_layout_min_X(r)),c=function(e){var t=i.redirects[e];if(e===a){if(!n)throw Error("single-spa-layout: <redirect> requires single-spa@>=5.7.0");return n(),setTimeout((function(){single_spa_min_Z(t)})),{v:void 0}}};for(var u in i.redirects){var s=c(u);if("object"===single_spa_layout_min_l(s))return s.v}var f=[];single_spa_layout_min_(r).forEach((function(e){d[e]&&(f.push(d[e].unmount()),delete d[e])})),f.length>0&&(n(),Promise.all(f).then((function(){single_spa_min_Z(r)})))}function g(){if(0===single_spa_layout_min_q(i).indexOf(p)){var e=single_spa_min_yt().reduce((function(e,t){return e[t]=document.getElementById(single_spa_layout_min_k(t)),e}),{});single_spa_layout_min_B({location:window.location,routes:i.routes,parentContainer:E(),shouldMount:!0,applicationContainers:e})}}function b(e){var t=e.detail,n=t.navigationIsCanceled,r=t.newUrl;n||single_spa_layout_min_(r).forEach((function(e){var t=document.getElementById(single_spa_layout_min_k(e));t&&t.isConnected&&t.parentNode.removeChild(t)}))}function w(e,t){if(e&&e.childNodes&&t)for(var n={nextSibling:e.childNodes[0]},r=0;r<t.length;r++){var o,a=t[r];if("route"!==a.type){for(var i=null===(o=n)||void 0===o?void 0:o.nextSibling;(null===(c=i)||void 0===c?void 0:c.nodeType)===Node.TEXT_NODE&&""===i.textContent.trim();){var c;i=i.nextSibling}n=i,single_spa_layout_min_D(a)&&single_spa_layout_min_M(i,a)&&(a.connectedNode=i),a.routes&&w(i,a.routes)}else w(e,a.routes)}}function E(){return"string"==typeof i.containerEl?document.querySelector(i.containerEl):i.containerEl}}function single_spa_layout_min_D(e){return t=["application","route","fragment","assets","redirect"],n=e.type,!t.some((function(e){return e===n}));var t,n}function single_spa_layout_min_M(e,t){var n,r;return!!e&&(r=t instanceof Node?t:function(e){switch(e.type){case"#text":return document.createTextNode(e.value);case"#comment":return document.createComment(e.value);default:var t=document.createElement(e.type);return e.attrs.forEach((function(e){t.setAttribute(e.name,e.value)})),t}}(t),(n=e).nodeType===r.nodeType&&n.nodeName===r.nodeName&&function(e,t){var n=e.getAttributeNames?e.getAttributeNames().sort():[],r=e.getAttributeNames?e.getAttributeNames().sort():[];return n.length===r.length&&!n.some((function(n){return e.getAttribute(n)!==t.getAttribute(n)}))}(n,r))}function single_spa_layout_min_B(e){var t=e.location,n=e.routes,r=e.parentContainer,o=e.previousSibling,a=e.shouldMount,i=e.applicationContainers;return n.forEach((function(e,n){if("application"===e.type){if(a){var c,u=single_spa_layout_min_k(e.name);i[e.name]?c=i[e.name]:document.getElementById(u)?c=document.getElementById(u):(c=document.createElement("div")).id=u,"string"==typeof e.className?c.className=e.className:"string"!=typeof e.className&&"string"==typeof c.className&&c.removeAttribute("class"),single_spa_layout_min_R(c,r,o),o=c}}else if("route"===e.type)o=single_spa_layout_min_B({location:t,routes:e.routes,parentContainer:r,previousSibling:o,shouldMount:a&&e.activeWhen(t),applicationContainers:i});else if(e instanceof Node||"string"==typeof e.type)if(a){if(!e.connectedNode){var s=e instanceof Node?e.cloneNode(!1):single_spa_layout_min_U(e);e.connectedNode=s}single_spa_layout_min_R(e.connectedNode,r,o),e.routes&&single_spa_layout_min_B({location:t,routes:e.routes,parentContainer:e.connectedNode,previousSibling:null,shouldMount:a,applicationContainers:i}),o=e.connectedNode}else(l=e.connectedNode)&&(l.remove?l.remove():l.parentNode.removeChild(l)),delete e.connectedNode;var l})),o}function single_spa_layout_min_H(e){for(var t=e.applicationName,n=e.location,r=e.routes,o=0;o<r.length;o++){var a=r[o];if("application"===a.type){if(a.name===t)return a}else if("route"===a.type){if(a.activeWhen(n)){var i=single_spa_layout_min_H({applicationName:t,location:n,routes:a.routes});if(i)return i}}else if(a.routes){var c=single_spa_layout_min_H({applicationName:t,location:n,routes:a.routes});if(c)return c}}}function single_spa_layout_min_R(e,t,n){var r=n?n.nextSibling:t.firstChild;r!==e&&t.insertBefore(e,r)}function single_spa_layout_min_k(e){return"single-spa-application:".concat(e)}function single_spa_layout_min_U(e){if("#text"===e.type.toLowerCase())return document.createTextNode(e.value);if("#comment"===e.type.toLowerCase())return document.createComment(e.value);var t=document.createElement(e.type);return(e.attrs||[]).forEach((function(e){t.setAttribute(e.name,e.value)})),t.routes&&t.routes.forEach((function(e){t.appendChild(single_spa_layout_min_U(e))})),t}function single_spa_layout_min_q(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:location;return t["hash"===e.mode?"hash":"pathname"]}function single_spa_layout_min_X(e){try{return new URL(e)}catch(n){var t=document.createElement("a");return t.href=e,t}}function single_spa_layout_min_(e){var t=[],n=single_spa_min_Tt(e?single_spa_layout_min_X(e):location);return single_spa_min_Et().forEach((function(e){n.indexOf(e)<0&&t.push(e)})),t}function single_spa_layout_min_F(e){var t=e.routes,n=e.loadApp,o={};return single_spa_layout_min_V(o,single_spa_layout_min_$,{},t.routes),Object.keys(o).map((function(e){var t=o[e];return{name:e,customProps:function(e,n){var r=single_spa_layout_min_C(t,(function(e){return e.activeWhen(n)}));return r?r.props:{}},activeWhen:t.map((function(e){return e.activeWhen})),app:function(){var o;single_spa_layout_min_v&&(o=single_spa_layout_min_C(t,(function(e){return e.activeWhen(window.location)})));var a=n({name:e});return o&&o.loader?function(e,t,n){return Promise.resolve().then((function(){var o,a=single_spa_layout_min_k(e),i=document.getElementById(a);i||((i=document.createElement("div")).id=a,i.style.display="none",document.body.appendChild(i),o=function(){i.style.removeProperty("display"),""===i.getAttribute("style")&&i.removeAttribute("style"),window.removeEventListener("single-spa:before-mount-routing-event",o)},window.addEventListener("single-spa:before-mount-routing-event",o));var c="string"==typeof t.loader?single_spa_layout_min_T(t.loader):t.loader,u=single_spa_min_B(c,{name:"application-loader:".concat(e),domElement:i});function s(){return u.unmount().then((function(){o&&o()}))}return Promise.all([u.mountPromise,n]).then((function(e){var t,n,r=(n=2,function(e){if(Array.isArray(e))return e}(t=e)||function(e,t){var n=null==e?null:"undefined"!=typeof Symbol&&e[Symbol.iterator]||e["@@iterator"];if(null!=n){var r,o,a=[],i=!0,c=!1;try{for(n=n.call(e);!(i=(r=n.next()).done)&&(a.push(r.value),!t||a.length!==t);i=!0);}catch(e){c=!0,o=e}finally{try{i||null==n.return||n.return()}finally{if(c)throw o}}return a}}(t,n)||single_spa_layout_min_p(t,n)||function(){throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}());r[0];var o=r[1];return s().then((function(){return o}))}),(function(e){return s().then((function(){throw e}))}))}))}(e,o,a):a}}}))}function single_spa_layout_min_V(e,t,n,r){r.forEach((function(r){"application"===r.type?(e[r.name]||(e[r.name]=[]),e[r.name].push({activeWhen:t,props:single_spa_layout_min_Y(n,r.props),loader:r.loader})):"route"===r.type?single_spa_layout_min_V(e,r.activeWhen,single_spa_layout_min_Y(n,r.props),r.routes):r.routes&&single_spa_layout_min_V(e,t,n,r.routes)}))}function single_spa_layout_min_Y(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{};return single_spa_layout_min_s(single_spa_layout_min_s({},e),t)}function single_spa_layout_min_$(){return!0}
 
-;// CONCATENATED MODULE: ./src/index.js
+;// CONCATENATED MODULE: ./src/index.ts
 
 
+if (false) {}
+
+/* @ts-ignore */
+window.remotes = {
+  headerModuleUrl: "https://cdn-js.sfo3.digitaloceanspaces.com/header-mf-mfe/remoteEntry.js",
+  headerSectionModuleUrl: "https://cdn-js.sfo3.digitaloceanspaces.com/header-section-mf-mfe/remoteEntry.js"
+};
 const MfeConfigs = {
   "header/App": __webpack_require__.e(/* import() */ 249).then(__webpack_require__.t.bind(__webpack_require__, 249, 23)),
   "headerSection/App": __webpack_require__.e(/* import() */ 5).then(__webpack_require__.t.bind(__webpack_require__, 5, 23))
 };
-const routes = single_spa_layout_min_P(document.querySelector("#single-spa-layout"));
-const applications = single_spa_layout_min_F({
-  routes,
-  loadApp({
-    name
-  }) {
-    return MfeConfigs[name];
-  }
-});
-const layoutEngine = single_spa_layout_min_I({
-  routes,
-  applications
-});
-applications.forEach(bt);
-layoutEngine.activate();
-Bt();
+const layoutHTML = document.querySelector("#single-spa-layout");
+if (layoutHTML) {
+  const routes = single_spa_layout_min_P(layoutHTML);
+  const applications = single_spa_layout_min_F({
+    routes,
+    loadApp({
+      name
+    }) {
+      return MfeConfigs[name];
+    }
+  });
+  const layoutEngine = single_spa_layout_min_I({
+    routes,
+    applications
+  });
+  applications.forEach(bt);
+  layoutEngine.activate();
+  Bt();
+}
 
 /***/ }),
 
-/***/ 465:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 121:
+/***/ ((module) => {
 
-var __webpack_error__ = new Error();
-module.exports = new Promise((resolve, reject) => {
-	if(typeof header_mfe !== "undefined") return resolve();
-	__webpack_require__.l("https://cdn-js.sfo3.digitaloceanspaces.com/header-mf-mfe/remoteEntry.js", (event) => {
-		if(typeof header_mfe !== "undefined") return resolve();
-		var errorType = event && (event.type === 'load' ? 'missing' : event.type);
-		var realSrc = event && event.target && event.target.src;
-		__webpack_error__.message = 'Loading script failed.\n(' + errorType + ': ' + realSrc + ')';
-		__webpack_error__.name = 'ScriptExternalLoadError';
-		__webpack_error__.type = errorType;
-		__webpack_error__.request = realSrc;
-		reject(__webpack_error__);
-	}, "header_mfe");
-}).then(() => (header_mfe));
+module.exports = new Promise((resolve) => {
+  // We define a script tag to use the browser for fetching the remoteEntry.js file
+  const script = document.createElement("script");
+  script.src = window.remotes.headerModuleUrl;
+  // When the script is loaded we need to resolve the promise back to Module Federation
+  script.onload = () => {
+    // The script is now loaded on window using the name defined within the remote
+    const module = {
+      get: (request) => {
+        console.log(request);
+        return window.header_mfe.get(request);
+      },
+      init: (arg) => {
+        try {
+          console.log(arg);
+          return window.header_mfe.init(arg);
+        } catch (e) {
+          console.log(`Remote header Module has already been loaded`);
+        }
+      },
+    };
+
+    resolve(module);
+  };
+  // Lastly we inject the script tag into the document's head to trigger the script load
+  document.head.appendChild(script);
+});
 
 /***/ }),
 
-/***/ 319:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 882:
+/***/ ((module) => {
 
-var __webpack_error__ = new Error();
-module.exports = new Promise((resolve, reject) => {
-	if(typeof header_section_mfe !== "undefined") return resolve();
-	__webpack_require__.l("http://localhost:8084/remoteEntry.js", (event) => {
-		if(typeof header_section_mfe !== "undefined") return resolve();
-		var errorType = event && (event.type === 'load' ? 'missing' : event.type);
-		var realSrc = event && event.target && event.target.src;
-		__webpack_error__.message = 'Loading script failed.\n(' + errorType + ': ' + realSrc + ')';
-		__webpack_error__.name = 'ScriptExternalLoadError';
-		__webpack_error__.type = errorType;
-		__webpack_error__.request = realSrc;
-		reject(__webpack_error__);
-	}, "header_section_mfe");
-}).then(() => (header_section_mfe));
+module.exports = new Promise((resolve) => {
+  // We define a script tag to use the browser for fetching the remoteEntry.js file
+  const script = document.createElement("script");
+  script.src = window.remotes.headerSectionModuleUrl;
+  // When the script is loaded we need to resolve the promise back to Module Federation
+  script.onload = () => {
+    // The script is now loaded on window using the name defined within the remote
+    const module = {
+      get: (request) => {
+        console.log(request);
+        return window.header_section_mfe.get(request);
+      },
+      init: (arg) => {
+        try {
+          console.log(arg);
+          return window.header_section_mfe.init(arg);
+        } catch (e) {
+          console.log(`Remote headerSection Module has already been loaded`);
+        }
+      },
+    };
+
+    resolve(module);
+  };
+  // Lastly we inject the script tag into the document's head to trigger the script load
+  document.head.appendChild(script);
+});
 
 /***/ })
 
@@ -225,6 +261,7 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 					script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 				}
 /******/ 				script.setAttribute("data-webpack", dataWebpackPrefix + key);
+/******/ 		
 /******/ 				script.src = url;
 /******/ 			}
 /******/ 			inProgress[url] = [done];
@@ -238,7 +275,6 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 				doneFns && doneFns.forEach((fn) => (fn(event)));
 /******/ 				if(prev) return prev(event);
 /******/ 			}
-/******/ 			;
 /******/ 			var timeout = setTimeout(onScriptComplete.bind(null, undefined, { type: 'timeout', target: script }), 120000);
 /******/ 			script.onerror = onScriptComplete.bind(null, script.onerror);
 /******/ 			script.onload = onScriptComplete.bind(null, script.onload);
@@ -271,12 +307,12 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 			"5": [
 /******/ 				"default",
 /******/ 				"./App",
-/******/ 				319
+/******/ 				882
 /******/ 			],
 /******/ 			"249": [
 /******/ 				"default",
 /******/ 				"./App",
-/******/ 				465
+/******/ 				121
 /******/ 			]
 /******/ 		};
 /******/ 		__webpack_require__.f.remotes = (chunkId, promises) => {
@@ -342,7 +378,9 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 			if(!__webpack_require__.o(__webpack_require__.S, name)) __webpack_require__.S[name] = {};
 /******/ 			// runs all init snippets from all modules reachable
 /******/ 			var scope = __webpack_require__.S[name];
-/******/ 			var warn = (msg) => (typeof console !== "undefined" && console.warn && console.warn(msg));
+/******/ 			var warn = (msg) => {
+/******/ 				if (typeof console !== "undefined" && console.warn) console.warn(msg);
+/******/ 			};
 /******/ 			var uniqueName = "home";
 /******/ 			var register = (name, version, factory, eager) => {
 /******/ 				var versions = scope[name] = scope[name] || {};
@@ -363,8 +401,8 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 			var promises = [];
 /******/ 			switch(name) {
 /******/ 				case "default": {
-/******/ 					initExternal(465);
-/******/ 					initExternal(319);
+/******/ 					initExternal(121);
+/******/ 					initExternal(882);
 /******/ 				}
 /******/ 				break;
 /******/ 			}
@@ -375,7 +413,25 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "https://mfes.app";
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
@@ -473,8 +529,7 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 	// module cache are used so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	var __webpack_exports__ = __webpack_require__(305);
+/******/ 	var __webpack_exports__ = __webpack_require__(9);
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=main.js.map
